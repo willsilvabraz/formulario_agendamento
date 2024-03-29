@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Origem</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <section class="container_1" id="Conteiner1">
+        <article>
+            <label for="operador">Operador
+                <input type="name" id="operador" placeholder="Nome Do Operador"></label>
+            <label for="supervisor">Supervisor
+                <select id="Supervisor"></label>
+            <option value=""> </option>
+            <option value="joao">João </option>
+            <option value="pedro">Pedro </option>
+            <option value="joze">Jozé </option>
+            </select>
+        </article>
+        <button onclick="enviarParametros()">Enviar</button>
+    </section>
+    <script>
+        function enviarParametros() {
+            var operador = document.getElementById("operador").value;
+            var supervisor = document.getElementById("Supervisor").value;
+            window.location.href = "formulario.html?operador=" + encodeURIComponent(operador) + "&supervisor=" + encodeURIComponent(supervisor);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/formulario.css">
+    
+    <title>Formulário</title>
+</head>
+
+<body >
+    <header>
+        <ul>
+            <li><a href="#" target="_blank">Ferramenta0</a></li>
+            <li><a href="#" target="_blank">Ferramenta1</a></li>
+            <li><a href="#" target="_blank">Ferramenta2</a></li>
+            <li><a href="#" target="_blank">Ferramenta3</a></li>
+        </ul>
+    </header>
+    <form id="form">
+        <div class="bts">
+            <input type="button" value="Limpar" id="limpar">
+            <input type="submit" value="Enviar" id="enviar">
+        </div>
+        <input list="motivos" id="motivo" type="text" placeholder="Escolher Ativo">
+        <datalist name="motivos" id="motivos" name="motivos">
+            <option data-value="0"></option>
+            <option data-value="correio" id="teste">AGENDAMENTO CORREIOS</option>
+            <option data-value="AGENDAMENTO REALIZADO PARA O DIA ">AGENDAMENTO</option>
+            <option data-value="CLIENTE INFORMA QUE IRA DEVOLVER OS EQUIPAMENTOS EM UMA ATP/LOJAS ">AGENDAMENTO ATP
+            </option>
+            <option data-value="TELEFONE NAO PERTENCE AO CLIENTE">TELEFONE NAO PERTENCE</option>
+            <option data-value="RESPONSAVEL NAO SE ENCONTRA">RESPONSAVEL NAO SE ENCONTRA</option>
+            <option data-value="CLIENTE SOLICITA RETORNO">CLIENTE SOLICITA RETORNO</option>
+            <option data-value="AGUARDANDO REINSTALACAO">REINSTALACAO</option>
+            <option data-value="CLIENTE INFORMA QUE IRA FAZER ACORDO">ACORDO</option>
+            <option data-value="CLIENTE RECUSA ENTREGAR OS EQUIPAMENTOS">RECUSA ENTREGA </option>
+            <option data-value="CONTRATO COM STATUS CONECTADO">STATUS CONECTADO</option>
+            <option data-value="CONTRATO CANCELADO">CONTRATO CANCELADO</option>
+            <option data-value="CONTRATO NAO POSSUI EQUIPAMENTOS PARA RETIRADA">CONTRATO SEM EQUIPAMENTOS
+            </option>
+            <option data-value="JA CONSTA AGENDAMENTO">JA CONSTA AGENDAMENTO </option>
+            <option data-value="CLIENTE ALEGA TER DEVOLVIDO VIA ATENDIMENTO TECNICO">JA DEVOLVEU
+                TECNICO
+            </option>
+            <option data-value="CLIENTE ALEGA TER DEVOLVIDO VIA ATP/LOJAS ">JA DEVOLVEU ATP
+            </option>
+            <option data-value="POSSIVEL FRAUDE">POSSIVEL FRAUDE</option>
+        </datalist>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+        <label for="referencia" id="lbref">Ponto de Referência:</label>
+        <input type="text" id="referencia" name="referencia">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" disabled>
+        <div class="agenda">
+            <label for="data">Data:
+                <input type="date" id="data" name="data">
+            </label>
+            <label for="periodo">Período:
+                <select id="periodo">
+                    <option value=""></option>
+                    <option value=" NO PERIODO DA MANHA DE 08H AS 12H">Periodo Da Manhã</option>
+                    <option value=" NO PERIODO DA TARDE DE 12H AS 18H">Periodo Da Tarde</option>
+                </select>
+            </label>
+        </div>
+        <textarea id="texto" name="texto" rows="10" cols="100"> </textarea>
+    </form>
+    <script src="scripts/formulario.js"></script>
+</body>
+</html>

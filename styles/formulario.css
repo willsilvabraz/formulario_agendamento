@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap');
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icons {
+    margin-top: 4px;
+    width: 34px; 
+    height: 21.25px; 
+    border: 1px solid black;
+    display: flex;
+    background-color: aliceblue;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ced2db;
+}
+
+header {
+    display: flex;
+    height: 38.25px;
+    background-color: #0c0c0c;
+    align-items: center;
+    justify-content: right;
+    border-bottom: 2px solid rgb(110, 146, 141);
+}
+
+ul {
+    display: flex;
+    width: 425px;
+}
+
+li {
+    margin: auto;
+}
+
+form {
+    background-color: #5e7ebf;
+    width: 380.25px;
+    height: calc(95vh - 30px); 
+    max-height: 680px; 
+    margin: 8.5px auto; 
+    border: 1px solid #080808;
+    padding: 15.3px; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 4.25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6.12px; 
+}
+
+.agenda {
+    display: flex;
+    width: 100%; 
+    padding: 6.12px; 
+}
+
+input,
+textarea,
+#motivo,
+select {
+    width: 100%; 
+    padding: 3.06px;
+    margin-bottom: 8.5px;
+}
+
+#periodo {
+    height: 26.5px;
+}
+
+textarea {
+    height: 290.7px;
+    resize: none;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="button"] {
+    width: auto;
+    padding: 7.65px; 
+    margin-top: 7.65px; 
+    cursor: pointer;
+}
+
+.bts {
+    display: flex;
+    justify-content: space-between;
+}
